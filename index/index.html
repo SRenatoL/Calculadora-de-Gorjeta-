@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1 id="title">Gorge.calc</h1>
+            <nav>
+                <a href="">GitHub</a>
+                <a href="">Linkedin</a>
+            </nav>
+        </header>
+        <main>
+            <hr>
+            <h3>Calcule a Gorjeta</h3>
+            <form method="post" id="forms" aria-required="true">
+                <label for="account">Digite o valor da Conta: <abbr title="campo obrigatorio">*</abbr></label>
+                <input type="number" id="account" min="1" placeholder="Valor da conta" required>
+                <label for="perc">Digite a Porcentagem da Gorjeta: <abbr title="campo obrigatorio">*</abbr></label>
+                <input type="number" id="perc" min="1" placeholder="Porcentagem da Gorjeta" required>
+                <label for="people">Quantidade de pessoas: <abbr title="campo obrigatorio">*</abbr></label> 
+                <input type="number" id="people" min="1" placeholder="Quantidade de pessoas" required>
+                <br>
+                <input type="submit" value="Clique aqui para calcular !" onclick="runtime()">
+            </form>
+            <hr>
+            <h3>Dados da Gorjeta</h3>
+            <div id="tipdata">
+
+            </div>
+            <input type="button" value="Apagar" onclick="resetdata()">
+            <hr>
+        </main>
+        <article>
+            <h4>Dado de Gorjetas anteriores:</h4>
+            <div id="conteudo">
+
+                <div class="content" id="save01"></div>
+                <div class="content" id="save02"></div>
+                <div class="content" id="save03"></div>
+                <div class="content" id="save04"></div>
+                <div class="content" id="save05"></div>
+                <div class="content" id="save04"></div>
+            </div>
+        </article>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="scripts/app.js"></script>
+
+</body>
+
+</html>

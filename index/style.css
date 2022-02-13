@@ -1,0 +1,32 @@
+body{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1#title{
+    margin-top: 0px;
+}
+form#forms{
+    display: flex;
+    flex-direction: column;
+}
+div#content{
+    background-color: #c5c2c2;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 850px;
+}
+
+div#conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 25px;
+}
+div.content{
+    height: 200px;
+    width: 200px;
+    background-color: #f5f5dc;
+    border-radius: 25px;
+}
