@@ -11,8 +11,6 @@ function runtime() {
     var perc = parseFloat(document.getElementById('perc').value)
     var people = parseFloat(document.getElementById('people').value)
 
-    alert(account)
-
     if (runner === 0) {
         check(account, perc, people)
 
@@ -22,7 +20,7 @@ function runtime() {
 }
 //evita que os dados sejam envidas em branco
 function check(account, perc, people) {
-    runner = 1
+    
     let checkaccount = isNaN(account)
 
     let checkperc = isNaN(perc)
@@ -31,6 +29,7 @@ function check(account, perc, people) {
 
     if (checkaccount == false && checkperc == false && checkpeople == false) {
         tipsdata(account, perc, people)
+        runner = 1
 
     } else {
         alert('[ERRO] \n Algum campo esta vazio \n Preencha-os antes de prosseguir')
@@ -56,9 +55,13 @@ function tipsdata(account, perc, people) {
 }
 
 function resetdata() {
-    let erase = document.getElementById('Infos')
-    tips.removeChild(erase)
-    runner = 0
+    if(runner === 0){
+        alert('[ERRO] \n Sem dados para apagar')
+    }else{
+        let erase = document.getElementById('Infos')
+        tips.removeChild(erase)
+        runner = 0
+    }
 }
 
 function rollagain(account, perc, people) {

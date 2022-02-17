@@ -7,46 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    
+
 </head>
 
 <body>
     <div id="content">
-        <header>
-            <h1 id="title">Gorge.calc</h1>
-            <nav>
-                <a href="">GitHub</a>
-                <a href="">Linkedin</a>
+        <header class="head">
+            <h1 id="title">Calculadora de Gorjeta</h1>
+            <br>
+            <nav id="links">
+                <a href="https://github.com/SRenatoL" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/renato-silva-80a860214" target="_blank">Linkedin</a>
             </nav>
         </header>
-        <main>
-            <hr>
-            <h3>Calcule a Gorjeta</h3>
+        <hr id="line">
+        
+        <main id="maincontent">
+            <h3 id="subtitle">Calcule a Gorjeta</h3>
             <form id="forms" aria-required="true">
-                <label for="account">Digite o valor da Conta: <abbr title="campo obrigatorio">*</abbr></label>
-                <input type="number" id="account" min="1" placeholder="Valor da conta" required>
-                <label for="perc">Digite a Porcentagem da Gorjeta: <abbr title="campo obrigatorio">*</abbr></label>
-                <input type="number" id="perc" min="1" placeholder="Porcentagem da Gorjeta" required>
-                <label for="people">Quantidade de pessoas: <abbr title="campo obrigatorio">*</abbr></label>
-                <input type="number" id="people" min="1" placeholder="Quantidade de pessoas" required>
+                <!--<label for="account" id="lab">Digite o valor da Conta: <abbr title="campo obrigatorio"></abbr></label> -->
+                <input type="number" class="form" id="account" min="1" placeholder="Valor da conta" required>
+                <!--<label for="perc" id="lab">Digite a Porcentagem da Gorjeta: <abbr title="campo obrigatorio"></abbr></label>-->
+                <input type="number" class="form" id="perc" min="1" placeholder="Porcentagem da Gorjeta" required>
+                <!--<label for="people" id="lab">Quantidade de pessoas: <abbr title="campo obrigatorio"></abbr></label>-->
+                <input type="number" class="form" id="people" min="1" placeholder="Quantidade de pessoas" required>
                 <br>
-                <input type="button" value="Clique aqui para calcular !" onclick="runtime()">
+                <input class="formbutton" type="button" value="Clique aqui para calcular !" onclick="runtime()">
             </form>
-            <hr>
-            <h3>Dados da Gorjeta</h3>
-            <div id="tipdata">
-
-            </div>
-            <input type="button" value="Apagar" onclick="resetdata()">
-            <hr>
+            
         </main>
-        <article>
-        </article>
-        <footer>
-            Teste de texto
-        </footer>
+        <hr id="line">
+            <footer class="foot">
+                <h3 id="foottitle">Dados da Gorjeta</h3>
+                <div id="tipdata">
+
+                </div>
+                <input class="footbutton" type="button" value="Apagar" onclick="resetdata()">
+            </footer>
     </div>
-<script src="scripts/app.js"></script>
+    <script src="scripts/app.js"></script>
 </body>
 
 </html>
