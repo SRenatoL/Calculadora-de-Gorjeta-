@@ -42,7 +42,7 @@ function tipsdata(account, perc, people) {
 
 
     var answer = (account * (perc / 100))
-    var division = (answer / people)
+    var division = (answer / people).toFixed(2)
     var text = document.createElement('p')
     text.id = 'Infos'
     if (people > 1) {
