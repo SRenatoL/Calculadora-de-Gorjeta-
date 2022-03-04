@@ -41,7 +41,7 @@ function check(account, perc, people) {
 function tipsdata(account, perc, people) {
 
 
-    var answer = (account * (perc / 100))
+    var answer = (account * (perc / 100)).toFixed(2)
     var division = (answer / people).toFixed(2)
     var text = document.createElement('p')
     text.id = 'Infos'

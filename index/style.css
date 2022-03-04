@@ -4,6 +4,7 @@ body{
     background-color: #100F1D;
     margin-top: 5%;
     margin-bottom: 5%;
+    scrollbar-width: none;
 }
 div#content{
     background-color: #c5c2c2;
