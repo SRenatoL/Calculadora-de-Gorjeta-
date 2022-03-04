@@ -25,12 +25,9 @@
         <main id="maincontent">
             <h3 id="subtitle">Calcule a Gorjeta</h3>
             <form id="forms" aria-required="true">
-                <!--<label for="account" id="lab">Digite o valor da Conta: <abbr title="campo obrigatorio"></abbr></label> -->
-                <input type="number" class="form" id="account" min="1" placeholder="Valor da conta" required>
-                <!--<label for="perc" id="lab">Digite a Porcentagem da Gorjeta: <abbr title="campo obrigatorio"></abbr></label>-->
-                <input type="number" class="form" id="perc" min="1" placeholder="Porcentagem da Gorjeta" required>
-                <!--<label for="people" id="lab">Quantidade de pessoas: <abbr title="campo obrigatorio"></abbr></label>-->
-                <input type="number" class="form" id="people" min="1" placeholder="Quantidade de pessoas" required>
+                <input type="number" class="form" id="account" min="1" placeholder="Valor da conta" autocomplete="off">
+                <input type="number" class="form" id="perc" min="1" placeholder="Porcentagem da Gorjeta" autocomplete="off">
+                <input type="number" class="form" id="people" min="1" placeholder="Quantidade de pessoas" autocomplete="off">
                 <br>
                 <input class="formbutton" type="button" value="Clique aqui para calcular !" onclick="runtime()">
             </form>
