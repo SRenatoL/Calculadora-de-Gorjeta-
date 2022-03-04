@@ -20,7 +20,6 @@
 
 * [Badges](#badges)
 * [Descrição do Projeto](#descrição-do-projeto)
-* [Status do Projeto](#status-do-projeto)
 * [Índice](#índice)
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 * [Acesso ao Projeto](#acesso-ao-projeto)
@@ -32,8 +31,16 @@
 
 ## Funcionalidades e Demonstração da Aplicação
 
-<p>O projeto em seu estado atual conta apenas com a calculadora </p>
+<p></p>
 
-<h1 align = "center">
+<h3 align = "center">
 <img alt = "Readme" title="Readme" src = "./GitHub/Animação.gif">
-</h1>
+</h3>
+
+## Acesso ao Projeto
+
+```bash
+
+#Clone esse repositório
+
+$
