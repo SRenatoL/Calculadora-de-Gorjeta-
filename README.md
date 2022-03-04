@@ -35,5 +35,5 @@
 <p>O projeto em seu estado atual conta apenas com a calculadora </p>
 
 <h1 align = "center">
-<img alt = "Readme" title="Readme" src = "./git/Animação.gif">
+<img alt = "Readme" title="Readme" src = "./GitHub/Animação.gif">
 </h1>
