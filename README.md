@@ -42,5 +42,10 @@
 ```bash
 
 #Clone esse repositório
+$ git clone git@github.com:SRenatoL/Calculadora-de-Gorjeta-.git
 
-$
+#inicie o npm
+$ npm init 
+
+#instale o webpack
+$ npx webpack
