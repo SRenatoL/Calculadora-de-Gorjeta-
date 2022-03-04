@@ -5,12 +5,14 @@ body{
     margin-top: 5%;
     margin-bottom: 5%;
     scrollbar-width: none;
+    overflow: hidden;
 }
 div#content{
     background-color: #c5c2c2;
     margin-left: 20%;
     margin-right: 20%;
     border-radius: 10px;
+    
 }
 header.head{
     height: auto;
