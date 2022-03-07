@@ -13,7 +13,7 @@
 
 ## Descrição do Projeto
 
-<p>Calculadora de Gorjeta desenvolvida em JavaScript </p>
+<p>Calculadora de Gorjeta desenvolvida em JavaScript</p>
 
 
 ## Índice
@@ -23,8 +23,6 @@
 * [Índice](#índice)
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
-* [Pessoas Contribuidoras](#pessoas-contribuidoras)
-* [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
 * [Licença](#licença)
 * [Conclusão](#conclusão)
 
@@ -52,4 +50,10 @@
 </h3>
 <p align = "center">Já o outro seria sobre não existir dados a serem apagados pela pagina</p>
 
-## Tecnologias Utilizadas
+## Tecnologias utilizadas
+
+- ``Html``
+- ``CSS``
+- ``JavaScript``
+
+## Licença
