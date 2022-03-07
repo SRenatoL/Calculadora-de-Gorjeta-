@@ -31,10 +31,13 @@
 
 ## Funcionalidades e Demonstração da Aplicação
 
+<p>A sua funcionalidade principal e fazer o calculo de gorjetas seja de restaurantes ou bares, Tendo sido produzido para ter um script simples</p>
   
 <h3 align = "center">
 <img alt = "Readme" title="Readme" src = "./GitHub/Animação.gif">
 </h3>
+
+<p>Dependendo da quantidade de pessoas colocadas, sendo o minimo uma, ele oculta alguns valores pois causaria uma poluição de conteudo que não seria nescessario no momento</p>
 
 ## Acesso ao Projeto
 
