@@ -22,7 +22,6 @@
 * [Descrição do Projeto](#descrição-do-projeto)
 * [Índice](#índice)
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
-* [Acesso ao Projeto](#acesso-ao-projeto)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Pessoas Contribuidoras](#pessoas-contribuidoras)
 * [Pessoas Desenvolvedoras do Projeto](#pessoas-desenvolvedoras)
@@ -37,7 +36,21 @@
 <img alt = "Readme" title="Readme" src = "./GitHub/Animação.gif">
 </h3>
 
-<p>Dependendo da quantidade de pessoas colocadas, sendo o minimo uma, ele oculta alguns valores pois causaria uma poluição de conteudo que não seria nescessario no momento</p>
+<p align = "center">Dependendo da quantidade de pessoas colocadas, sendo o minimo uma, ele oculta alguns valores pois causaria uma poluição de conteudo que não seria nescessario no momento</p>
 
-## Acesso ao Projeto
+<hr>
+<br>
+<h3 align = "center">
+<img alt = "Readme" title="Readme" src = "./GitHub/Animação2.gif">
+</h3>
+
+<p align = "center">No estado atual do projeto as mensagens de erro são enviadas pelo alert, uma delas e alertando sobre algum dos inputs estarem vazios e não ter os dados nescessarios para salvar</p>
+
+<hr>
+
+<h3 align = "center">
+<img alt = "Readme" title="Readme" src = "./GitHub/Animação3.gif">
+</h3>
+<p align = "center">Já o outro seria sobre não existir dados a serem apagados pela pagina</p>
+
 
