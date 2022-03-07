@@ -5,7 +5,10 @@
 
 <p align = "Center">
 <img src = "https://img.shields.io/badge/Status-EM%20DESENVOLVIMENTO-yellow?style=for-the-badge">
+<img src = "https://img.shields.io/github/license/SRenatoL/Calculadora-de-Gorjeta-?color=informational&style=for-the-badge">
+<img src = "https://img.shields.io/badge/%20Data%20da%20%C3%BAltima%20vers%C3%A3o%20do%20Projeto-Fevereiro-important?style=for-the-badge">
 <img src = "https://img.shields.io/badge/Vers%C3%A3o-0.5-informational?style=for-the-badge">
+
 </p >
 <h4 align = "Center"> 
     :construction:  Projeto em construção  :construction:
@@ -24,7 +27,6 @@
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Licença](#licença)
-* [Conclusão](#conclusão)
 
 ## Funcionalidades e Demonstração da Aplicação
 
@@ -57,3 +59,5 @@
 - ``JavaScript``
 
 ## Licença
+
+Calculadora de Gorjetas e licenciado por [MIT license](./docs).
