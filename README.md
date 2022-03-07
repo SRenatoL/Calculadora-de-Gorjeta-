@@ -39,7 +39,6 @@
 <p align = "center">Dependendo da quantidade de pessoas colocadas, sendo o minimo uma, ele oculta alguns valores pois causaria uma poluição de conteudo que não seria nescessario no momento</p>
 
 <hr>
-<br>
 <h3 align = "center">
 <img alt = "Readme" title="Readme" src = "./GitHub/Animação2.gif">
 </h3>
@@ -53,4 +52,4 @@
 </h3>
 <p align = "center">Já o outro seria sobre não existir dados a serem apagados pela pagina</p>
 
-
+## Tecnologias Utilizadas
