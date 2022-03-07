@@ -6,7 +6,7 @@
 <p align = "Center">
 <img src = "https://img.shields.io/badge/Status-EM%20DESENVOLVIMENTO-yellow?style=for-the-badge">
 <img src = "https://img.shields.io/github/license/SRenatoL/Calculadora-de-Gorjeta-?color=informational&style=for-the-badge">
-<img src = "https://img.shields.io/badge/%20Data%20da%20%C3%BAltima%20vers%C3%A3o%20do%20Projeto-Fevereiro-important?style=for-the-badge">
+<img src = "https://img.shields.io/badge/Ultima%20Atualiza%C3%A7%C3%A3o-Fevereiro-important?style=for-the-badge">
 <img src = "https://img.shields.io/badge/Vers%C3%A3o-0.5-informational?style=for-the-badge">
 
 </p >
