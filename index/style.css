@@ -12,7 +12,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
 }
 header.head{
-    background-color: #802424;
+    background-color: #260101;
     grid-column: 1/5;
     grid-row: 1/2;
     display: flex;
@@ -21,40 +21,65 @@ header.head{
     /* gap: 30px; */
 }
 header.head h1#title{
+    color: #F2C299;
     padding-right: 13.5px;
-    border-right: 1px black solid;
+    border-right: 1px #F2C299 solid;
     cursor: default;
 }
 header.head nav.navlinks{
     display: flex;
 }
 header.head nav.navlinks a{
-    color: black;
+    color: #F2C299;
     text-decoration: none;
     font-size: 20px;
     padding: 15px 13.5px;
 }
 nav.navlinks a#links:hover{
     color: #ffffff;
-    background: #0000003a;
+    background: #00000074;
 }
 main.midcontent{
-    background-color: #ff0000;
+    background-image: url("./css-image/pexels-eneida-nieves-905847.jpg");
+    background-size: 1300px;
+    background-position: center;
+    background-repeat: no-repeat;
     grid-column: 1/5;
     grid-row: 2/3;
 }
 section.content01{
-    background-color: #008000;
+    background-color: #e0dbd2;
     grid-column: 1/3;
     grid-row: 3/4;
+    border:  1px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.content01 h2#subtitle{
+    margin-top: 50px;
+    padding-bottom: 12.5px;
+    margin-bottom: 12.5px;
+    border-bottom: 1px black solid;
+}
+section.content01 form.forms{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+section.content01 form.forms input#CalcInput{
+    height: 30px;
+    width: 200px;
+    text-align: center;
 }
 section.content02{
-    background-color: #0000ff;
+    background-color: #F2EFE9;
     grid-column: 3/5;
     grid-row: 3/4;
+    border:  0.5px black solid;
 }
 footer.foot{
-    background-color: gray;
+    background-color: #A66641;
     grid-row: 4/6;
     grid-column: 1/5;
 }
