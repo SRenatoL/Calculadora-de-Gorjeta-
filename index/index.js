@@ -7,9 +7,9 @@ let tips = document.getElementById('tipdata')
 
 function runtime() {
 
-    var account = parseFloat(document.getElementById('account').value)
-    var perc = parseFloat(document.getElementById('perc').value)
-    var people = parseFloat(document.getElementById('people').value)
+    var account = document.querySelector('input[class="Value"]').value 
+    var perc = document.querySelector('input[class="Percent"]').value
+    var people = document.querySelector('input[class="People"]').value
 
     if (runner === 0) {
         check(account, perc, people)
