@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Quicksand:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato&family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap');
 
 *{
     margin: 0;
@@ -8,8 +8,12 @@ body{
     
     height: 100vh;
     display: grid;
-    grid-template-rows: 55px 230px 370px 40px;
+    grid-template-rows: 55px 600px 40px;
     grid-template-columns: repeat(4, 1fr);
+    background-image: url("./css-image/pexels-eneida-nieves-905847.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 header.head{
     background-color: #260101;
@@ -25,6 +29,7 @@ header.head h1#title{
     padding-right: 13.5px;
     border-right: 1px #F2C299 solid;
     cursor: default;
+    font-family: "Quicksand", sans-serif;
 }
 header.head nav.navlinks{
     display: flex;
@@ -34,24 +39,25 @@ header.head nav.navlinks a{
     text-decoration: none;
     font-size: 20px;
     padding: 15px 13.5px;
+    font-family: "Quicksand";
 }
 nav.navlinks a#links:hover{
-    color: #ffffff;
-    background: #00000074;
+    color: #ede8e8;
+    background: #0000008e;
 }
 main.midcontent{
-    background-image: url("./css-image/pexels-eneida-nieves-905847.jpg");
+    /*background-image: url("./css-image/pexels-eneida-nieves-905847.jpg");
     background-size: 1310px;
     background-position: center;
     background-repeat: no-repeat;
     grid-column: 1/5;
-    grid-row: 2/3;
+    grid-row: 2/3;*/
 }
 section.content01{
-    background-color: #e0dbd2;
+    /*background-color: #e0dbd269;*/
     grid-column: 1/3;
-    grid-row: 3/4;
-    border:  1px black solid;
+    grid-row: 2/3;
+    /*border-top:  2px black solid;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +66,8 @@ section.content01{
 section.content01 h2#subtitle{
     padding-bottom: 12.5px;
     margin-bottom: 12.5px;
-    border-bottom: 1px black solid;
+    border-bottom: 1.5px black solid;
+    font-family: 'Montserrat', sans-serif;
 }
 section.content01 form.forms{
     display: flex;
@@ -70,7 +77,7 @@ section.content01 form.forms{
     height: 338px;
     justify-content: center;
     align-items: center;
-    background-color: #bdbcbc;
+    background-color: #9d634196;
     border-radius: 20px;
 }
 section.content01 form.forms input#CalcInput{
@@ -79,21 +86,88 @@ section.content01 form.forms input#CalcInput{
     text-align: center;
     border-radius: 5px;
     border: 1px #80808087 solid;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
 section.content01 form.forms input#CalcInput::-webkit-inner-spin-button{
     -webkit-appearance: none;
 }
 section.content01 form.forms input#CalButton{
     padding: 10px;
+    border-radius: 5px;
+    border: 1.5px black solid;
+    font-family: 'Lato', sans-serif;
+}
+section.content01 form.forms input#CalButton:hover{
+    background-color: #acacac;
 }
 section.content02{
-    background-color: #e0dbd2;
+    /*background-color: #e0dbd2;*/
     grid-column: 3/5;
-    grid-row: 3/4;
-    border:  0.5px black solid;
+    grid-row: 2/3;
+    /*border:  0.5px black solid;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+section.content02 div#datatip{
+    width: 325px;
+    height: 338px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d634196;
+    border-radius: 20px;
+    gap: 13px;
+}
+section.content02 div#datatip h2#tipstitle{
+    padding-bottom: 12.5px;
+    margin-bottom: 12.5px;
+    border-bottom: 1px black solid;
+    font-family: 'Montserrat', sans-serif;
+}
+section.content02 div#datatip div#tipscontent div#textcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+div#textcontent p{
+    font-family: 'Inter', sans-serif;
+    color: #000000; 
+    font-weight: 600;
+}
+div#tipscontent mark.Marker{
+    font-size: 20px;
+    border-radius: 5px;
+}
+mark#M01{
+    background-color: #b46233;
+}
+mark#M02{
+    background-color: #F2A477;
+}
+mark#M03{
+    background-color: #682e19;
+}
+mark#M04{
+    background-color: #e88562;
+}
+mark#M05{
+    background-color: #ed916f;
+}
+section.content02 div#datatip input#delettips{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    font-family: 'Lato', sans-serif;
+}
+section.content02 div#datatip input#delettips:hover{
+    background-color: #acacac;
 }
 footer.foot{
-    background-color: #834b2c;
-    grid-row: 4/6;
+    background-color: #4e1602;
+    grid-row: 3/4;
     grid-column: 1/5;
 }

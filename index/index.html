@@ -17,15 +17,15 @@
             <a href="https://github.com/SRenatoL" id="links" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/in/renato-silva-80a860214" id="links" target="_blank">Linkedin</a>
         </nav>
-        
+
     </header>
     <main class="midcontent">
-        
+
     </main>
     <section class="content01">
-         
+
         <form class="forms">
-            <h2 id="subtitle">Calculadora de gorjeta</h2>
+            <h2 id="subtitle">Insira os dados aqui!</h2>
             <input type="number" class="Value" id="CalcInput" placeholder="Valor da conta" autocomplete="off">
             <input type="number" class="Percent" id="CalcInput" placeholder="Porcentagem da Gorjeta" autocomplete="off">
             <input type="number" class="People" id="CalcInput" placeholder="Quantidade de Pessoas" autocomplete="off">
@@ -33,16 +33,19 @@
         </form>
     </section>
     <section class="content02">
-        <h2>Dados da Gorjeta</h2>
-        <div>
-            <p id="tipdata"></p>
-            <input type="button" value="Bina">
+        <div id="datatip">
+            <h2 id="tipstitle">Dados da Gorjeta</h2>
+            <div id="tipscontent">
+
+            </div>
+            <input type="button" value="Apagar!" id="delettips" onclick="resetdata()">
         </div>
         
     </section>
     <footer class="foot">
-
+        
     </footer>
 </body>
 <script src="index.js"></script>
+
 </html>

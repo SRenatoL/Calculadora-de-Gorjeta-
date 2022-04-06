@@ -2,7 +2,7 @@
 var runner = 0
 
 //div onde sera enviada as informações dos inputs
-let tips = document.getElementById('tipdata')
+let tips = document.getElementById('tipscontent')
 
 
 function runtime() {
@@ -43,13 +43,15 @@ function tipsdata(account, perc, people) {
 
     var answer = (account * (perc / 100)).toFixed(2)
     var division = (answer / people).toFixed(2)
-    var text = document.createElement('p')
-    text.id = 'Infos'
+    let text = document.createElement('div')
+    text.id = "textcontent"
+
     if (people > 1) {
-        text.innerText = `Valor da conta: ${account} \n Porcentagem: ${perc} \n Valor da Gorjeta: ${answer} \n Pessoas: ${people} \n Valor por pessoa ${division}`
+        text.innerHTML = `<p><mark id="M01" class="Marker"> Valor da conta:</mark> ${account}</p>  <p><mark id="M02" class="Marker">Porcentagem:</mark> ${perc}</p>  <p><mark id="M03" class="Marker">Valor da Gorjeta:</mark> ${answer}</p>
+        <p><mark id="M04" class="Marker">Pessoas:</mark> ${people}</p>  <p><mark id="M05" class="Marker">Valor por pessoa:</mark> ${division}</p>`
         tips.appendChild(text)
     } else {
-        text.innerText = `Valor da conta: ${account} \n Porcentagem: ${perc} \n Valor da Gorjeta: ${answer}`
+        text.innerHTML = `<p><mark id="M01" class="Marker"> Valor da conta:</mark> ${account}</p>  <p><mark id="M02" class="Marker">Porcentagem:</mark> ${perc}</p>  <p><mark id="M03" class="Marker">Valor da Gorjeta:</mark> ${answer}</p>`
         tips.appendChild(text)
     }
 }
@@ -58,7 +60,7 @@ function resetdata() {
     if(runner === 0){
         alert('[ERRO] \n Sem dados para apagar')
     }else{
-        let erase = document.getElementById('Infos')
+        let erase = document.getElementById('textcontent')
         tips.removeChild(erase)
         runner = 0
     }
