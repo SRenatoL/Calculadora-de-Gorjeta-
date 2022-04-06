@@ -11,38 +11,41 @@
 </head>
 
 <body>
-    <div id="content">
-        <header class="head">
-            <h1 id="title">Calculadora de Gorjeta</h1>
-            <br>
-            <nav id="links">
-                <a href="https://github.com/SRenatoL" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/renato-silva-80a860214" target="_blank">Linkedin</a>
-            </nav>
-        </header>
-        <hr id="line">
-        
-        <main id="maincontent">
-            <h3 id="subtitle">Calcule a Gorjeta</h3>
-            <form id="forms" aria-required="true">
-                <input type="number" class="form" id="account" min="1" placeholder="Valor da conta" autocomplete="off">
-                <input type="number" class="form" id="perc" min="1" placeholder="Porcentagem da Gorjeta" autocomplete="off">
-                <input type="number" class="form" id="people" min="1" placeholder="Quantidade de pessoas" autocomplete="off">
-                <br>
-                <input class="formbutton" type="button" value="Clique aqui para calcular !" onclick="runtime()">
-            </form>
-            
-        </main>
-        <hr id="line">
-            <footer class="foot">
-                <h3 id="foottitle">Dados da Gorjeta</h3>
-                <div id="tipdata">
+    <header class="head">
+        <h1 id="title">Calculadora de Gorjeta</h1>
+        <nav class="navlinks">
+            <a href="https://github.com/SRenatoL" id="links" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/renato-silva-80a860214" id="links" target="_blank">Linkedin</a>
+        </nav>
 
-                </div>
-                <input class="footbutton" type="button" value="Apagar" onclick="resetdata()">
-            </footer>
-    </div>
-    
+    </header>
+    <main class="midcontent">
+
+    </main>
+    <section class="content01">
+
+        <form class="forms">
+            <h2 id="subtitle">Insira os dados aqui!</h2>
+            <input type="number" class="Value" id="CalcInput" placeholder="Valor da conta" autocomplete="off">
+            <input type="number" class="Percent" id="CalcInput" placeholder="Porcentagem da Gorjeta" autocomplete="off">
+            <input type="number" class="People" id="CalcInput" placeholder="Quantidade de Pessoas" autocomplete="off">
+            <input type="button" id="CalButton" value="Clique aqui para calcular !" onclick="runtime()">
+        </form>
+    </section>
+    <section class="content02">
+        <div id="datatip">
+            <h2 id="tipstitle">Dados da Gorjeta</h2>
+            <div id="tipscontent">
+
+            </div>
+            <input type="button" value="Apagar!" id="delettips" onclick="resetdata()">
+        </div>
+        
+    </section>
+    <footer class="foot">
+        
+    </footer>
 </body>
 <script src="index.js"></script>
+
 </html>
