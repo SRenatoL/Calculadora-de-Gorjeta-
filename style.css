@@ -1,123 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Quicksand:wght@300&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lato&family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap');
 
-body{
-    background-color: #100F1D;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    scrollbar-width: none;
-    overflow: hidden;
+*{
+    margin: 0;
+    padding: 0;
 }
-div#content{
-    background-color: #c5c2c2;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-radius: 10px;
+body{
     
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 55px 600px 40px;
+    grid-template-columns: repeat(4, 1fr);
+    background-image: url("./css-image/pexels-eneida-nieves-905847.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 header.head{
-    height: auto;
+    background-color: #260101;
+    grid-column: 1/5;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    /* gap: 30px; */
 }
 header.head h1#title{
-display: flex;
-justify-content: center;
-padding-top: 10px;
-font-family: 'Ubuntu', sans-serif;
-margin-bottom: 0px;
+    color: #F2C299;
+    padding-right: 13.5px;
+    border-right: 1px #F2C299 solid;
+    cursor: default;
+    font-family: "Quicksand", sans-serif;
 }
-header.head nav#links{
+header.head nav.navlinks{
     display: flex;
+}
+header.head nav.navlinks a{
+    color: #F2C299;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px 13.5px;
+    font-family: "Quicksand";
+}
+nav.navlinks a#links:hover{
+    color: #ede8e8;
+    background: #0000008e;
+}
+main.midcontent{
+    /*background-image: url("./css-image/pexels-eneida-nieves-905847.jpg");
+    background-size: 1310px;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1/5;
+    grid-row: 2/3;*/
+}
+section.content01{
+    /*background-color: #e0dbd269;*/
+    grid-column: 1/3;
+    grid-row: 2/3;
+    /*border-top:  2px black solid;*/
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+section.content01 h2#subtitle{
+    padding-bottom: 12.5px;
+    margin-bottom: 12.5px;
+    border-bottom: 1.5px black solid;
+    font-family: 'Montserrat', sans-serif;
+}
+section.content01 form.forms{
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    font-family: 'Quicksand', sans-serif;
-    color: #000000;
-}
-hr#line{
-    border-top: 1px solid #000000 ;
-}
-
-h3#subtitle{
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: 'Ubuntu', sans-serif;
-}
-main#maincontent{
-    display: flex;
-    flex-direction: column;
+    width: 325px;
+    height: 338px;
+    justify-content: center;
     align-items: center;
+    background-color: #9d634196;
+    border-radius: 20px;
 }
-
-form#forms{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input.form {
-    width: 230px;
+section.content01 form.forms input#CalcInput{
     height: 30px;
-    font-family: Quicksand, sans-serif;
-    font-weight: 600;
+    width: 200px;
     text-align: center;
-    background-color: #808080;
-    color: #dadada;
-    margin-top: 6px;
-
-}
-input.form::placeholder{
-    color: #dadada;
-}
-
-label#lab {
-    font-weight: 400;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-input.formbutton{
     border-radius: 5px;
-    margin-bottom: 10px;
-    border-width: 1px;
-    width: 230px;
-    height: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    border: 1px rgb(0, 0, 0) solid;
+    border: 1px #80808087 solid;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
 }
-
-input.formbutton:hover{
-    background-color: #aaaaaa;
+section.content01 form.forms input#CalcInput::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }
-
-h3#foottitle{
-    margin-bottom: 2.5px;
-    margin-top: 2.5px;
-    font-family: 'Ubuntu', sans-serif;
+section.content01 form.forms input#CalButton{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1.5px black solid;
+    font-family: 'Lato', sans-serif;
+}
+section.content01 form.forms input#CalButton:hover{
+    background-color: #acacac;
+}
+section.content02{
+    /*background-color: #e0dbd2;*/
+    grid-column: 3/5;
+    grid-row: 2/3;
+    /*border:  0.5px black solid;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+section.content02 div#datatip{
+    width: 325px;
+    height: 338px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #9d634196;
+    border-radius: 20px;
+    gap: 13px;
+}
+section.content02 div#datatip h2#tipstitle{
+    padding-bottom: 12.5px;
+    margin-bottom: 12.5px;
+    border-bottom: 1px black solid;
+    font-family: 'Montserrat', sans-serif;
+}
+section.content02 div#datatip div#tipscontent div#textcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+div#textcontent p{
+    font-family: 'Inter', sans-serif;
+    color: #000000; 
+    font-weight: 600;
+}
+div#tipscontent mark.Marker{
+    font-size: 20px;
+    border-radius: 5px;
+}
+mark#M01{
+    background-color: #b46233;
+}
+mark#M02{
+    background-color: #F2A477;
+}
+mark#M03{
+    background-color: #682e19;
+}
+mark#M04{
+    background-color: #e88562;
+}
+mark#M05{
+    background-color: #ed916f;
+}
+section.content02 div#datatip input#delettips{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    font-family: 'Lato', sans-serif;
+}
+section.content02 div#datatip input#delettips:hover{
+    background-color: #acacac;
 }
 footer.foot{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-input.footbutton{
-    border-radius: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-width: 1px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    width: 155px;
-    height: 30px;
-    background-color: rgb(239, 239, 239);
-    color: #000000;
-    border: 1px #000000 solid;
-}
-
-input.footbutton:hover{
-    background-color: #aaaaaa;
-}
-
-p#Infos{
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
+    background-color: #4e1602;
+    grid-row: 3/4;
+    grid-column: 1/5;
 }
