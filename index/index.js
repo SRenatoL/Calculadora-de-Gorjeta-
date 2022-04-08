@@ -33,14 +33,19 @@ class bill {
         let checkperc = isNaN(this.percentage)
         let checkpeople = isNaN(this.people)
 
+        alert(checkvalue)
+        alert(this.value)
+        alert(typeof(this.value))
+        
+
         switch (checkvalue, checkperc, checkpeople) {
-            case checkvalue == false || this.value == undefined:
+            case checkvalue === true:
                 alert("Digite um valor de conta valido!")
                 break
-            case checkperc == false || this.percentage == undefined:
+            case checkperc == true:
                 alert("Digite um valor de porcentagem valido!")
                 break
-            case checkpeople == false || this.people == undefined:
+            case checkpeople == true:
                 alert("Digite uma quantidade de pessoas valido!")
                 break
             default:
@@ -57,11 +62,20 @@ class bill {
         let checkPerc = newPerc != old[1]
         let checkPeop = newPeople != old[2]
 
-        if (checkA == true || checkPerc == true || checkPeop == true) {
-            resetdata()
-            runtime()
-        } else {
-            alert("Apague ou Modifique os dados para prosseguir")
+        switch (checkA, checkPerc, checkPeop) {
+            case checkA == false:
+                alert("Apague ou Modifique os dados para prosseguir")
+                break
+            case checkPerc == false:
+                alert("Apague ou Modifique os dados para prosseguir")
+                break
+            case checkPeop == false:
+                alert("Apague ou Modifique os dados para prosseguir")
+                break
+            default:
+                resetdata()
+                runtime()
+                break
         }
     }
 
