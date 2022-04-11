@@ -5,10 +5,10 @@ let old = []
 
 function runtime() {
 
-    var account = document.querySelector('input[class="Value"]').value
-    var perc = document.querySelector('input[class="Percent"]').value
-    var people = document.querySelector('input[class="People"]').value
-
+    var account = parseInt(document.querySelector('input[class="Value"]').value)
+    var perc = parseInt(document.querySelector('input[class="Percent"]').value)
+    var people = parseInt(document.querySelector('input[class="People"]').value
+    )
     let values = new bill(account, perc, people)
     values.firstcheck()
 }
@@ -16,6 +16,7 @@ function resetdata() {
     if (runner == 0) {
         alert("Sem dados a serem apagados")
     } else {
+        old.slice(0, 3)
         let erase = document.getElementById('textcontent')
         tips.removeChild(erase)
         runner = 0
@@ -33,48 +34,33 @@ class bill {
         let checkperc = isNaN(this.percentage)
         let checkpeople = isNaN(this.people)
 
-        alert(checkvalue)
-        alert(this.value)
-        alert(typeof(this.value))
-        
-
-        switch (checkvalue, checkperc, checkpeople) {
-            case checkvalue === true:
-                alert("Digite um valor de conta valido!")
-                break
-            case checkperc == true:
-                alert("Digite um valor de porcentagem valido!")
-                break
-            case checkpeople == true:
-                alert("Digite uma quantidade de pessoas valido!")
-                break
-            default:
-                this.calc()
-                break
+        if (checkvalue == true || this.value === 0) {
+            alert("Digite um valor de conta valido!")
+        } else if (checkperc == true || this.percentage === 0) {
+            alert("Digite um valor de porcentagem valido!")
+        } else if (checkpeople == true || this.people === 0) {
+            alert("Digite um numero de pessoas valido!")
+        } else {
+            this.calc()
         }
+
     } NewCheck() {
 
-        var newAccount = document.querySelector('input[class="Value"]').value
-        var newPerc = document.querySelector('input[class="Percent"]').value
-        var newPeople = document.querySelector('input[class="People"]').value
+        var newAccount = parseInt(document.querySelector('input[class="Value"]').value)
+        var newPerc = parseInt(document.querySelector('input[class="Percent"]').value)
+        var newPeople = parseInt(document.querySelector('input[class="People"]').value)
 
-        let checkA = newAccount != old[0]
-        let checkPerc = newPerc != old[1]
-        let checkPeop = newPeople != old[2]
+        let checkA = newAccount !== old[0]
+        let checkPerc = newPerc !== old[1]
+        let checkPeop = newPeople !== old[2]
 
         switch (checkA, checkPerc, checkPeop) {
-            case checkA == false:
-                alert("Apague ou Modifique os dados para prosseguir")
-                break
-            case checkPerc == false:
-                alert("Apague ou Modifique os dados para prosseguir")
-                break
-            case checkPeop == false:
-                alert("Apague ou Modifique os dados para prosseguir")
-                break
-            default:
+            case true:
                 resetdata()
                 runtime()
+                break
+            default:
+                alert("Apague ou Modifique os dados para prosseguir")
                 break
         }
     }
@@ -103,6 +89,4 @@ class bill {
     }
 
 }
-
-
 
