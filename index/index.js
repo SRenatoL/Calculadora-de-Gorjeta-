@@ -1,7 +1,7 @@
 let tips = document.getElementById('tipscontent')
 let runner = 0
 let checked = 0
-let old = []
+
 
 function runtime() {
 
@@ -16,10 +16,9 @@ function resetdata() {
     if (runner == 0) {
         alert("Sem dados a serem apagados")
     } else {
-        old.slice(0, 3)
         let erase = document.getElementById('textcontent')
         tips.removeChild(erase)
-        runner = 0
+        runner--
     }
 }
 
@@ -44,25 +43,9 @@ class bill {
             this.calc()
         }
 
-    } NewCheck() {
-
-        var newAccount = parseInt(document.querySelector('input[class="Value"]').value)
-        var newPerc = parseInt(document.querySelector('input[class="Percent"]').value)
-        var newPeople = parseInt(document.querySelector('input[class="People"]').value)
-
-        let checkA = newAccount !== old[0]
-        let checkPerc = newPerc !== old[1]
-        let checkPeop = newPeople !== old[2]
-
-        switch (checkA, checkPerc, checkPeop) {
-            case true:
-                resetdata()
-                runtime()
-                break
-            default:
-                alert("Apague ou Modifique os dados para prosseguir")
-                break
-        }
+    } Return() {
+        resetdata()
+        runtime()
     }
 
     calc() {
@@ -74,17 +57,16 @@ class bill {
             text.id = "textcontent"
             if (this.people > 1) {
                 text.innerHTML = `<p><mark id="M01" class="Marker"> Valor da conta:</mark> ${this.value}</p>  <p><mark id="M02" class="Marker">Porcentagem:</mark> ${this.percentage}</p>  <p><mark id="M03" class="Marker">Valor da Gorjeta:</mark> ${answer}</p>
-                <p><mark id="M04" class="Marker">Pessoas:</mark> ${this.people}</p>  <p><mark id="M05" class="Marker">Valor por pessoa:</mark> ${division}</p>`
-                old = [this.value, this.percentage, this.people]
+                    <p><mark id="M04" class="Marker">Pessoas:</mark> ${this.people}</p>  <p><mark id="M05" class="Marker">Valor por pessoa:</mark> ${division}</p>`
                 tips.appendChild(text)
-
             } else {
                 text.innerHTML = `<p><mark id="M01" class="Marker"> Valor da conta:</mark> ${this.value}</p>  <p><mark id="M02" class="Marker">Porcentagem:</mark> ${this.percentage}</p>  <p><mark id="M03" class="Marker">Valor da Gorjeta:</mark> ${answer}</p>`
                 tips.appendChild(text)
-                old = [this.value, this.percentage, this.people]
             }
+
+
         } else {
-            this.NewCheck()
+            this.Return()
         }
     }
 
