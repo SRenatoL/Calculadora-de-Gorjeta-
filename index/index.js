@@ -33,6 +33,7 @@ class bill {
         let checkperc = isNaN(this.percentage)
         let checkpeople = isNaN(this.people)
 
+
         if (checkvalue == true || this.value === 0) {
             alert("Digite um valor de conta valido!")
         } else if (checkperc == true || this.percentage === 0) {

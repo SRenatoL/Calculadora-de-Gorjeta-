@@ -6,8 +6,8 @@
 <p align = "Center">
 <img src = "https://img.shields.io/badge/Status-EM%20DESENVOLVIMENTO-yellow?style=for-the-badge">
 <img src = "https://img.shields.io/github/license/SRenatoL/Calculadora-de-Gorjeta-?color=informational&style=for-the-badge">
-<img src = "https://img.shields.io/badge/Ultima%20Atualiza%C3%A7%C3%A3o-Fevereiro-important?style=for-the-badge">
-<img src = "https://img.shields.io/badge/Vers%C3%A3o-0.5-informational?style=for-the-badge">
+<img src = "https://img.shields.io/badge/Ultima%20Atualiza%C3%A7%C3%A3o-Abril-important?style=for-the-badge">
+<img src = "https://img.shields.io/badge/Vers%C3%A3o-1.0-informational?style=for-the-badge">
 
 </p >
 <h4 align = "Center"> 
@@ -30,7 +30,8 @@
 
 ## Funcionalidades e Demonstração da Aplicação
 
-<p>A sua funcionalidade principal e fazer o calculo de gorjetas seja de restaurantes ou bares, Tendo sido produzido para ter um script simples</p>
+<p>O projeto possui 2 partes principais, a área onde esta os inputs e onde sera mostrada as informações do calculo</p>
+<p>Sendo 3 inputs, sendo eles: Valor de conta, Porcentagem e Quantidades de pessoas</p>
   
 <h3 align = "center">
 <img alt = "Readme" title="Readme" src = "./GitHub/Animação.gif">
@@ -43,7 +44,7 @@
 <img alt = "Readme" title="Readme" src = "./GitHub/Animação2.gif">
 </h3>
 
-<p align = "center">No estado atual do projeto as mensagens de erro são enviadas pelo alert, uma delas e alertando sobre algum dos inputs estarem vazios e não ter os dados nescessarios para salvar</p>
+<p align = "center">Na area dos inputs os erros são 3, um erro para cada área de input.</p>
 
 <hr>
 
