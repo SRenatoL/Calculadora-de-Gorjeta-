@@ -4,15 +4,12 @@
 ## Badges
 
 <p align = "Center">
-<img src = "https://img.shields.io/badge/Status-EM%20DESENVOLVIMENTO-yellow?style=for-the-badge">
+<img src = "https://img.shields.io/badge/Status-FINALIZADO-success?style=for-the-badge&logo">
 <img src = "https://img.shields.io/github/license/SRenatoL/Calculadora-de-Gorjeta-?color=informational&style=for-the-badge">
 <img src = "https://img.shields.io/badge/Ultima%20Atualiza%C3%A7%C3%A3o-Abril-important?style=for-the-badge">
 <img src = "https://img.shields.io/badge/Vers%C3%A3o-1.0-informational?style=for-the-badge">
 
 </p >
-<h4 align = "Center"> 
-    :construction:  Projeto em construção  :construction:
-</h4>
 
 ## Descrição do Projeto
 
@@ -23,10 +20,19 @@
 
 * [Badges](#badges)
 * [Descrição do Projeto](#descrição-do-projeto)
+* [Status do Projeto](#status-do-projeto)
 * [Índice](#índice)
 * [Funcionalidades e Demonstração da Aplicação](#funcionalidades-e-demonstração-da-aplicação)
 * [Tecnologias utilizadas](#tecnologias-utilizadas)
 * [Licença](#licença)
+
+## Status do Projeto
+
+<h4 align="center" > 
+	<strong>🚧  Concluido  🚧</strong>
+</h4>
+
+
 
 ## Funcionalidades e Demonstração da Aplicação
 
@@ -44,7 +50,9 @@
 <img alt = "Readme" title="Readme" src = "./GitHub/Animação2.gif">
 </h3>
 
-<p align = "center">Na area dos inputs os erros são 3, um erro para cada área de input.</p>
+<p align = "center">Na area dos inputs os erros são 3, um erro para cada área de input, os  três seguem a mesma lógica:</p>
+
+<p align = "center">Alertar quando houver um valor invalido sendo enviado</p>
 
 <hr>
 
@@ -59,6 +67,9 @@
 - ``CSS``
 - ``JavaScript``
 
+
+
 ## Licença
 
 Calculadora de Gorjetas e licenciado por [MIT license](./docs).
+
